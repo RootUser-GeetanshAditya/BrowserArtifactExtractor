@@ -34,3 +34,5 @@ Get-BrowserData -Browser firefox -Data bookmarks
 # Get Edge history without filter
 Get-BrowserData -Browser edge -Data history
 ```
+## Ethical Considerations
+Use this tool only with explicit permission on systems you are authorized to test. Unauthorized extraction of browser data may violate privacy laws and ethical standards.

@@ -26,7 +26,7 @@ function Get-Database{
             Browser   = $Browser
             Link      = $row.Link
             Title     = $row.Title
-            Timestamp = $row.Visited ? $row.Visited : $row.Added
+            Timestamp = if ($row.Visited) { $row.Visited } else { $row.Added }
         }
     }
     Remove-Item $tempDbPath -Force
